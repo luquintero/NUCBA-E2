@@ -1,0 +1,66 @@
+:root {
+    --background: #f8f9fa;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    align-items: center;
+    background: var(--background);
+    max-height: 80px;
+    max-width: 1920px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+.nav-list-block {
+    padding-left: 70%;
+}
+
+.nav-list {
+    display: flex;
+    align-items: right;
+}
+
+.nav-item {
+    display: flex; 
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 60%;
+}
+
+.simple-item .Bloom-logo {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.simple-item a:hover {
+    font-weight: bold;
+    color: slategray;
+}
+
+.contact-button {
+    background-color: #e3b8d8;
+    border-radius: 15px;
+    padding: 10% 20% 10% 20%;
+    margin-top: -5px;
+    align-items: right;
+    border: #e3b8d8;
+}
