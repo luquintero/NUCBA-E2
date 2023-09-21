@@ -4,13 +4,17 @@
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>BLOOM - Digital Agency</title>
     <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
 	<div>	
 	<header>
+		<div class="Bloom-logo"><a href="landing-page.html"><img src="Bloom-logo.png" alt="logo" width="150"></a></div>
 		<nav class="nav">
-  			<div class="Bloom-logo"><a href="landing-page.html"><img src="Bloom-logo.png" alt="logo" width="150"></a></div>
-  		    <div class="nav-list-block">
+			<label for="menu-toggle" class="menu-label">
+				<img src="./menu.png" alt="menu" class="menu-icon">
+			</label>
+			<input type="checkbox" id="menu-toggle">
     		<ul class="nav-list">
       			<li class="nav-item simple-item">
         			<a href="landing-page.html">Home</a></li>
@@ -23,7 +27,6 @@
         		<li class="nav-item">
         			<button class="contact-button"><a href="#">Contacto</a></button></li>
         	</ul>
-  		    </div>
 		</nav>
 	</header>
 	<main>
@@ -40,12 +43,50 @@
 			<img src="./hero-image.jpg" alt="imagen computadora"/>
     		</div>
 		</section>
+	</main>	
 		<section id="description">
 			<h2>Pauta digital, posicionamiento de marca y mas!</h2>
 			<div class="resumen">
 				<p>En <strong>BLOOM Digital Agency</strong> nos enfocamos en impulsar el crecimiento digital de nuestros clientes, teniendo en cuenta el posicionamiento de marca, market share, generacion de leads y contenido sin dejar de lado el SEO.</p>
 			</div>
 		</section>
-	</main>	
+		<section id="seccion2">
+			<h3>PORQUE ELEGIRNOS:</h3>
+			<div class="ventajas">
+				<div class="card">
+					<img src="./crecimiento.png" alt="Grafico creciente"/>
+					<p>Crecimiento escalable</p> 
+				</div>
+				<div class="card">
+					<img src="./ideas.png" alt="Icono foco de luz"/>
+					<p>Ideas y herramientas innovadoras</p>
+				</div>
+				<div class="card">
+					<img src="./presupuesto.png" alt="simbolo $"/>
+					<p>Eficiente gestion de presupuesto</p>
+				</div>
+			</div>
+		</section>
+		<section id="contacto">
+			<h2>Contactanos</h2>
+			<div class="bloque-contacto">
+				<div class="info-contacto">	
+					<h4>Lujan Quintero</h4>
+					<span><img src="./telefono.png" alt="telefono"/><p>1151231212</p></span> 
+					<span><img src="./email.png" alt="email"/><a href="mailto:lu@bloom.com">lu@bloom.com</a></span>
+				</div>
+				<div class="info-contacto">
+					<h4>Constanza Agostino</h4>
+					<span><img src="./telefono.png" alt="telefono"/><p>1151231212</p></span> 
+					<span><img src="./email.png" alt="email"/><a href="mailto:coti@bloom.com">coti@bloom.com</a></span>
+				</div>
+				<div class="imagen-contacto">
+						<img src="./creativa.jpg" alt="Creativa"/>	
+				</div>
+			</div>
+		</section>
 </body>
+<footer>
+	<img src="./Bloom-logo.png" alt="logo"/>
+</footer>
 </html>

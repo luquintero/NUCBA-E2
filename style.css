@@ -4,6 +4,7 @@
     --background: #f8f9fa;
     --primary: #9f7db7;
     --secondary: #e3b8d8;
+    --terciary: #cadb81;
 }
 
 * {
@@ -24,28 +25,23 @@ header {
     background: var(--background);
     max-height: 80px;
     max-width: 1920px;
+    justify-content: space-between;
 }
 
 .nav {
     display: flex;
     align-items: center;
-    gap: 200px;
-}
-
-.nav-list-block {
-    padding-left: 70%;
 }
 
 .nav-list {
     display: flex;
-    align-items: right;
+    align-items: center;
 }
 
 .nav-item {
     display: flex; 
-    padding-left: 10%;
-    padding-right: 10%;
-    width: 60%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .simple-item .Bloom-logo {
@@ -64,10 +60,15 @@ a {
 .contact-button {
     background-color: var(--secondary);
     border-radius: 15px;
-    padding: 10% 20% 10% 20%;
+    padding: 10px;
     margin-top: -5px;
     align-items: right;
     border: var(--secondary);
+}
+
+#menu-toggle,
+.menu-label {
+  display: none;
 }
 
 #hero {
@@ -94,19 +95,17 @@ a {
 }
 
 .hero-info p {
-    font-size: 16px;
     width: 60%;
     color: #000
 }
 
 .hero-info button {
     border-radius: 10px;
-    font-size: 14px;
     color: #000000;
     background-color: var(--secondary); 
     border: var(--secondary);
-    padding: 10px 0px;
-    width: 120px;
+    padding: 10px;
+    width: 130px;
     text-align: center;
 }
 
@@ -123,4 +122,129 @@ a {
 
 .resumen {
     padding: 20px;
+}
+
+#seccion2 {
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 40px 0 40px 0;
+}
+
+#seccion2 h3 {
+    text-align: center;
+}
+
+.ventajas {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 190px;
+    padding: 40px 30px;
+    border-radius: 20%;
+}
+
+.card img {
+    max-width: 70px;
+    padding-top: 10px;
+}
+
+.card p {
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+}
+
+.ventajas .card:first-child {
+    background-color: var(--primary);
+}
+
+.ventajas .card:nth-child(2) {
+    background-color: var(--secondary);
+}
+
+.ventajas .card:last-child {
+    background-color: var(--terciary);
+}
+
+#contacto {
+    padding: 40px 40px 40px 0;
+}
+
+#contacto h2 {
+    color: var(--primary);
+    padding-left: 40px;
+}
+
+.bloque-contacto {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    max-width: 1920px;
+    padding: 40px;
+}
+
+.info-contacto {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.info-contacto span {
+    display: flex;
+    padding: 10px 0 10px 20px;
+}
+
+.info-contacto h4 {
+    padding: 0 20px 20px 20px;
+}
+
+.info-contacto h4::first-letter {
+    color: var(--terciary);
+}
+
+.info-contacto p {
+    font-size: 16px;
+}
+
+.info-contacto a {
+    font-size: 16px;
+}
+
+.info-contacto img {
+    max-width: 30px;
+    padding-right: 10px;
+}
+
+.imagen-contacto {
+    display: flex;
+    flex-direction: row;
+    max-width: 300px;
+    padding-left: 400px;
+}
+
+.imagen-contacto img {
+    max-width: 500px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--background);
+}
+
+footer img {
+    max-width: 150px;
 }
